@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 
 	 private EditText location, country, temperature, humidity, pressure;
 	 private String queryString;
-	 private String APPID = "1937c3565d027796ab90ecade26ee182";
+	 private String APPID = "b137ecd77ed9d210f03a93b7af543372";
 	 private Weather weather = new Weather();
 	
 	//messages from background thread contain data for UI
@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
 
 			InputStream is = null;
 
-			String Url = "http://api.openweathermap.org/data/2.5/weather?q=" + queryString;
+			String Url = "https://api.openweathermap.org/data/2.5/weather?q=" + queryString;
 
 			try {
 				URL url = new URL(Url);
