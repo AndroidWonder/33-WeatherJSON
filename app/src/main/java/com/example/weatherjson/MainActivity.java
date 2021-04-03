@@ -51,10 +51,10 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		location = (EditText)findViewById(R.id.editText1);
-	    country = (EditText)findViewById(R.id.editText2);
-	    temperature = (EditText)findViewById(R.id.editText3);
-	    humidity = (EditText)findViewById(R.id.editText4);
-	    pressure = (EditText)findViewById(R.id.editText5);
+		country = (EditText)findViewById(R.id.editText2);
+		temperature = (EditText)findViewById(R.id.editText3);
+		humidity = (EditText)findViewById(R.id.editText4);
+		pressure = (EditText)findViewById(R.id.editText5);
 	    
 	}
 	
