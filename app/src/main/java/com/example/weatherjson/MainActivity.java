@@ -87,16 +87,18 @@ public class MainActivity extends Activity {
 				conn.setRequestMethod("GET");
 				conn.setDoInput(true);
 				// Starts the query
-				conn.connect();
+				conn.connect();  //synchronous so wait for response
 				int response = conn.getResponseCode();
 				Log.e("JSON", "The response is: " + response);
 				//if response code not 200, end thread
 				if (response != 200) return;
+				//create stream from socket
 				is = conn.getInputStream();
-
+				//read characters from stream, then buffer into text
 				BufferedReader reader = new BufferedReader(
 						new InputStreamReader(is));
 				String line;
+				//read text into StringBuilder
 				while ((line = reader.readLine()) != null) {
 					builder.append(line);
 				}
